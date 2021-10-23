@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>One Vision Healthcare</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <p>One vision healthcare</p>
+        </div>
+        <div id="width" class="nav">
+            <ul class="menu-list">
+                <li id="active"><a href="#">home</a></li>
+                <li><a href="#healt">Health Care</a></li>
+                <li><a href="#phar">Pharmacy</a></li>
+                <li><a href="#our">our docters</a></li>
+                <li><a href="#serv">services</a></li>
+                <li><a href="#con">contact</a></li>
+            </ul>
+        </div>
+        <div class="navigation-bar">
+            <span class="line" id="line-open" onclick="opennavigation()">&#9776;</span>
+            <span class="cross" id="line-close" onclick="closenavigation()">&times;</span>
+        </div>
+    </div>
+
+<!-- code in container section  -->
+
+    <div class="container">
+        <div class="content">
+            <h1>Healthcare & <span class="ani">medical.</span></h1>
+            <h2>the ultimate medical website !</h2>
+            <button class="btn">our medical store</button>
+        </div>
+    </div>
+
+<!-- code in welcome page  -->
+
+    <div id="healt" class="welcome-page">
+        <h1>welcome to</h1>
+        <h2>one vision healthcare</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nisi facere atque culpa tempora eaque dolore,
+            deserunt hic velit reprehenderit quas sit obcaecati consequuntur maxime animi recusandae facilis aut
+            tempore. Nam, cum! Quos doloremque quod, eveniet debitis dolorem laudantium? Vel!</p>
+    </div>
+
+<!-- code in pharmacy section  -->
+
+    <div id="phar" class="pharmacy">
+        <h1>our store</h1>
+        <div class="box">
+            <div>
+                <img src="images/pharm.jpg" alt="pharmacy image">
+            </div>
+            <div class="next-box">
+                <h1>we provide best medicine</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, saepe modi assumenda a voluptas sapiente, possimus tempora iusto facere voluptatum facilis recusandae dicta cum totam tenetur ducimus ipsa vero nam, suscipit quas amet eligendi atque accusamus. Voluptatibus, suscipit!</p>
+            </div>
+        </div>
+    </div>
+
+<!-- code in our docters section  -->
+
+    <div id="our" class="our-doctor">
+        <h1>our spacilict docter</h1>
+        <div class="contain">
+            <div>
+                <img src="images/docter.png" alt="">
+            </div>
+            <div class="discrip">
+                <h1>meet our</h1>
+                <h4>heart speclist docter <span>ananda.</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit corporis ratione adipisci voluptatum, magni facere officiis odit veniam provident laudantium aut illo sapiente, placeat aliquam beatae mollitia id nemo omnis, rerum harum quis!</p>
+            </div>    
+        </div>
+    </div>
+
+<!-- code in service section  -->
+
+    <div id="serv" class="service">
+        <h1>our services</h1>
+
+        <!-- list 1  -->
+
+        <div class="service-list">
+            <div>
+                <img src="images/a-docter.jpg" alt="">
+            </div>
+            <div class="cont">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo vel explicabo maxime beatae sunt rerum consequatur voluptatem eius culpa ad dolore sint mollitia ex maiores facilis earum, iusto asperiores assumenda ab consequuntur dicta non ipsam. Numquam veniam dolor neque dolorem quia distinctio in perferendis!</p>
+            </div>
+        </div>
+
+        <!-- list 2  -->
+
+        <div id="second-servicelist" class="service-list">
+            <div class="cont">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo vel explicabo maxime beatae sunt rerum consequatur voluptatem eius culpa ad dolore sint mollitia ex maiores facilis earum, iusto asperiores assumenda ab consequuntur dicta non ipsam. Numquam veniam dolor neque dolorem quia distinctio in perferendis!</p>
+            </div>
+            <div>
+                <img id="second-img" src="images/v-docter.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- list 3  -->
+
+        <div id="third-servicelist"  class="service-list">
+            <div>
+                <img src="images/labo.jpg" alt="">
+            </div>
+            <div class="cont">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo vel explicabo maxime beatae sunt rerum consequatur voluptatem eius culpa ad dolore sint mollitia ex maiores facilis earum, iusto asperiores assumenda ab consequuntur dicta non ipsam. Numquam veniam dolor neque dolorem quia distinctio in perferendis!</p>
+            </div>
+        </div>
+    </div>
+
+<!-- code for contact -->
+
+<div id="con" class="contact">
+    <h1>contact us</h1>
+    <div class="box2">
+        <div class="first">
+            <h1>one vision <span>healthcare</span></h1>
+            <h4>we have best docters in the world for you.</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sit unde enim quam incidunt cum modi voluptatem! Ab, eius neque.</p>
+        </div>
+        <div class="second-main">
+            <h1>website: www.onevision.com</h1>
+            <h1>phone: +911234567890</h1>
+            <h1>Email: programminghack.x3@gmail.com</h1>
+        </div>
+    </div>
+</div>
+
+<!-- code for footer  -->
+
+<div class="footer">
+    <p>copyright &copy; one vision healthcare 2021-2022</p>
+</div>
+
+<!-- code for javascript  -->
+
+    <script>
+
+        var op = document.getElementById('line-open');
+        var clo = document.getElementById('line-close');
+        var menu = document.getElementById('width');
+
+        function opennavigation() {
+            op.style.display = "none";
+            clo.style.display = "block";
+            menu.style.width = "60vw";
+        }
+        function closenavigation() {
+            op.style.display = "block";
+            clo.style.display = "none";
+            menu.style.width = "0px";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

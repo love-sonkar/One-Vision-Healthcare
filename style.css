@@ -1,0 +1,598 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Recursive', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #1a7fad;
+}
+
+.logo p{
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.nav{
+    height: 41px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li{
+    list-style: none;
+    margin: 0px 10px 0px 10px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    padding:5px 10px;
+    border-radius: 0px 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 0px;
+    transition: 1s;  
+}
+
+#active a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.navigation-bar{
+    display: none;
+}
+
+/* styling in container box  */
+
+.container::before{
+    content: "";
+    height: calc(100vh - 40px );
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/m-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.content{
+    height: calc(100vh - 40px );
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.ani{
+    animation:colorchange 20s infinite alternate;
+}
+
+
+@keyframes colorchange {
+    0% { color: rgb(255, 0, 128); }
+    10% { color: #8e44ad;}
+    20% {color: #1abc9c;}
+    30% { color: #d35400;}
+    40% {color: rgb(217, 255, 0);}
+    50% {color: #d42d65;}
+    60% {color: rgb(0, 255, 128);}
+    70% { color: #163616; }
+    80% { color: #f1c40f; }
+    90% { color: #2980b9; } 
+    100% { color: pink; }
+    
+}
+
+.content h2{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    margin: 10px 0px 10px 0px;
+}
+
+.btn {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 3px solid #2196f3;
+    background: transparent;
+    padding-bottom: 7px;
+}
+
+/* syling in welcome page  */
+
+.welcome-page{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcome-page h1{
+    color: rgb(8, 123, 255);
+    font-size: 2rem;
+}
+
+.welcome-page h2{
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 5px 0px 14px 0px;
+}
+
+.welcome-page p{
+    width: 80%;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+
+/* styling in pharmacy box  */
+
+.pharmacy{
+    height: 70vh;
+    width: 100%;
+}
+
+.pharmacy::before{
+    content: "";
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/drug.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.pharmacy h1{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 20px 0px 20px 0px;
+}
+
+.box{
+    height: 45vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.box img{
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.next-box h1{
+    margin: auto;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.next-box p{
+    margin: auto;
+    max-width: 80%;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* styling in our doctores section  */
+
+.our-doctor{
+    margin: 10px 0px 40px 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.our-doctor h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2rem;
+    padding: 30px 0px 30px 0px;
+}
+
+.contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contain img{
+    background-color: rgb(230 230 230);
+    border-radius: 50%;
+    display: block;
+    max-width: 20%;
+    margin: auto;
+}
+
+.discrip{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.discrip h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+.discrip h4{
+    font-size: 1.5rem;
+    padding: 10px 0px 7px 0px;
+}
+
+.discrip h4 span{
+    color: rgb(8, 123, 255);
+}
+
+.discrip p{
+    margin: auto;
+    width: 70%;
+    font-size: 1rem;
+}
+
+/* styling in services section  */
+
+.service{
+    background-color: rgb(239 239 239);
+    text-align: center;
+}
+
+.service h1{
+    padding: 20px 0px 20px 0px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.service-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.service-list img{
+    border-radius: 0px 20px;
+    max-width: 100%;
+}
+
+.cont p{
+    color: rgb(0, 0, 0);
+    margin: 0px 20px 0px 20px;
+    text-align: center;
+}
+
+/* list 2nd  */
+
+#second-img{
+    border-radius: 20px 0px;
+}
+
+/* styling in contact  */
+
+.contact{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.contact h1{
+    padding: 20px 0px 10px 0px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+.box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px 30px 0px;
+}
+.first{
+    max-width: 50%;
+}
+
+.first h1{
+    padding: 0px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.first h1 span{
+    color: rgb(8, 123, 255);
+}
+
+.first h4{
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    padding: 10px 0px 6px 0px;
+}
+
+.first p{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.second-main h1{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+/* styling in footer section  */
+
+.footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a7fad;
+}
+
+.footer p{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px){
+    
+    /* styling in navigation bar  */
+
+    .navigation-bar{
+        display: block;
+    }
+
+    .line{
+        position: absolute;
+        top: 3px;
+        right: 20px;
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+        z-index: 3;
+    }
+
+    .cross{
+        position: absolute;
+        top: 3px;
+        right: 23px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        z-index: 2;
+        display: none;
+    }
+
+    .nav{
+        width: 0;
+        transition: .5s;
+        overflow-x: hidden;
+        height: auto;
+        position: absolute;
+        align-items: flex-start;
+        top: 0;
+        left: 0;
+        bottom:0;
+        background-color: rgba(0,0,0,0.8);
+    }
+    .nav ul{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .nav ul li{
+        margin: 23px 10px 20px 10px;
+    }
+    .nav ul li a{
+        padding: 10px 12px;
+        display: block;
+        text-align: center;
+    }
+
+    .container::before{
+        height: 100vh;
+    }
+
+    /* styling in our doctor  */
+
+    .contain img {
+        max-width: 50%;   
+    }
+
+    /* our store styling in ipad view  */
+
+    .pharmacy{
+        height: 65vh;
+    }
+
+    .box{
+        height: 40vh;
+        flex-direction: column;
+    }
+
+    .box img {
+        max-width: 80%;
+    }
+
+    .next-box h1{
+        font-size: 1.5rem;
+    }
+
+    .next-box p{
+        font-size: .8rem;
+    }
+
+    /* our service styling in resp  */
+
+    .cont p{
+        font-size: .8rem;
+    }
+
+    /* contact us styling in resp  */
+
+    .box2{
+        flex-direction: column;
+    }
+    
+    .first{
+        max-width: 90%;
+    }
+}
+
+/* styling in 468px device  */
+
+@media (max-width: 468px){
+
+    /* styling in navigation bar  */
+
+    .nav ul li a {
+       font-size: .8rem;
+    }
+
+    .logo p{
+        font-size: 1rem;
+    }
+
+    /* styling in content section  */
+
+    .content h1{
+        font-size: 1.3rem;
+    }
+
+    .content h2{
+        font-size: .9rem;
+    }
+   
+    /* styling in welcome page  */
+
+    .welcome-page{
+        height: 45vh;
+    }
+
+    .welcome-page h1{
+        font-size: 1.3rem;
+    }
+    .welcome-page h2{
+        font-size: .9rem;
+    }
+    .welcome-page p{
+        font-size: .7rem;
+    }
+
+    /* styling in pharmcy page  */
+
+    .pharmacy h1{
+        font-size: 1.5rem;
+    }
+
+    .box img{
+        max-width: 100%;
+    }
+
+    .next-box h1{
+        font-size: 1.3rem;
+    }
+
+    .next-box p{
+        font-size: .7rem;
+    }
+
+    /* styling in our doctore section  */
+
+    .our-doctor h1{
+        font-size: 1.3rem;
+    }
+
+    .contain img{
+        max-width: 65%;
+    }
+
+    .discrip h1{
+        font-size: 1.5rem;
+    }
+    .discrip h4{
+        font-size: 1rem;
+    }
+    .discrip p{
+        font-size: .7rem;
+    }
+    /* styling in service section  */
+
+    .service h1{
+        font-size: 1.5rem;
+    }
+
+    .service-list{
+        flex-direction: column;
+    }
+
+    #second-servicelist{
+        flex-direction: column-reverse;
+    }
+
+    .service-list img {
+        margin: 0px 0px 20px 0px;
+    }
+
+    /* styling in contact section  */
+
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+
+    .first h1{
+        font-size: 1.3rem;
+    }
+    .first h4{
+        font-size: .9rem;
+    }
+    .first p{
+        font-size: .7rem;
+    }
+
+    .second-main h1{
+        font-size: .9rem;
+    }
+
+    /* styling in footer  */
+
+    .footer p{
+        font-size: .7rem;
+    }
+
+}
